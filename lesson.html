@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn1">Бас</button>
+
+<br><br>
+
+<input type="text" id="text">
+<button id="btn2">Шығару</button>
+
+<br><br>
+
+<form id="form">
+ <input type="text" id="name" placeholder="Аты-жөні">
+ <input type="email" id="email" placeholder="Email">
+ <button type="submit">Жіберу</button>
+</form>
+
+<script>
+document.getElementById("btn1").onclick = function() {
+ this.textContent = "Басылды!";
+};
+
+document.getElementById("btn2").onclick = function() {
+ console.log(document.getElementById("text").value);
+};
+
+document.getElementById("form").onsubmit = function(event) {
+ if (name.value === "" || email.value === "") {
+ alert("Өрістерді толтырыңыз!");
+ event.preventDefault();
+ }
+};
+</script>
+
+</body>
+</html>
