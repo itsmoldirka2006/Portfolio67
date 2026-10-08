@@ -5,7 +5,7 @@ bot_token = "8913794611:AAHccuH3dguaPZ9zp92MyjX0KlWYihiLyfs"
 convert_key = "aff4a61cc193542300bcffe8"
 
 bot = telebot.TeleBot(bot_token)
-
+ c nvdnv
 
 def get_exchange_rate(base_currency, target_currency):
     url = f"https://v6.exchangerate-api.com/v6/{convert_key}/latest/{base_currency}"
